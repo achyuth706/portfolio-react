@@ -19,7 +19,7 @@ export default function Navbar() {
         scrolled ? 'bg-bg/80 backdrop-blur-md border-b border-border' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+<div className="w-full px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <span className="font-heading font-bold text-lg text-white tracking-tight">
           Achyutha<span className="text-accent"> Sushanth</span> Ariga

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 const stats = [
   { value: '2+', label: 'Years at Oracle', sub: 'Production SWE' },
   { value: '60%', label: 'Runtime Cut', sub: 'Java microservices' },
-  { value: '1.88M+', label: 'Crime Records', sub: 'ML/RAG project' },
+  { value: '157K+', label: 'Embeddings Indexed', sub: 'ML/RAG project' },
   { value: '3.8', label: 'GPA', sub: 'MS @ UIUC' },
 ]
 
@@ -55,6 +55,9 @@ export default function Hero() {
   , working across full-stack development, distributed systems, and ML/RAG pipelines,
   with projects spanning crime intelligence, real-time notification infrastructure,
   and data engineering.
+  <br /><br />
+
+<span className="text-gray-500 text-sm">📍 Champaign, Illinois · Open to relocate</span>
           </motion.p>
 
           <motion.div
