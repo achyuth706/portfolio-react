@@ -3,7 +3,7 @@ import { useRef } from 'react'
 
 const experiences = [
   {
-    company: 'CITL UIUC',
+    company: 'Center for Innovation in Teaching and Learning, UIUC',
     role: 'Graduate Research Assistant',
     period: 'Jun 2025 – Present',
     color: '#3d8ef0',

@@ -48,10 +48,13 @@ export default function Hero() {
             variants={fadeUp}
             className="text-gray-400 leading-relaxed mb-8 max-w-md"
           >
-            2+ years as a Software Development Engineer at <span className="text-white font-medium">Oracle Corporation</span>,
-            building Java microservices and REST APIs at scale. Now pursuing an MS in Computer Science
-            at <span className="text-white font-medium">UIUC</span>, researching ML and RAG pipelines
-            for urban crime intelligence.
+  2+ years as a Software Development Engineer at{' '}
+  <span className="text-white font-medium">Oracle Corporation</span>,
+  building cloud-native Java microservices and REST APIs at scale. Now pursuing an{' '}
+  <span className="text-white font-medium">MS at UIUC</span>{' '}
+  , working across full-stack development, distributed systems, and ML/RAG pipelines,
+  with projects spanning crime intelligence, real-time notification infrastructure,
+  and data engineering.
           </motion.p>
 
           <motion.div
