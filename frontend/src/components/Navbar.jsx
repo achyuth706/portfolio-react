@@ -27,7 +27,7 @@ export default function Navbar() {
 
         {/* Nav links */}
         <div className="hidden md:flex items-center gap-8">
-          {['experience', 'projects', 'skills', 'contact'].map((section) => (
+          {['experience', 'education' ,'projects', 'skills', 'contact'].map((section) => (
             <button
               key={section}
               onClick={() => scrollTo(section)}
