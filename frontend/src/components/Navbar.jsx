@@ -19,7 +19,8 @@ export default function Navbar() {
         scrolled ? 'bg-bg/80 backdrop-blur-md border-b border-border' : 'bg-transparent'
       }`}
     >
-<div className="w-full px-8 py-4 flex items-center justify-between">
+      <div className="w-full px-8 py-4 flex items-center justify-between">
+
         {/* Logo */}
         <span className="font-heading font-bold text-lg text-white tracking-tight">
           Achyutha<span className="text-accent"> Sushanth</span> Ariga
@@ -27,7 +28,7 @@ export default function Navbar() {
 
         {/* Nav links */}
         <div className="hidden md:flex items-center gap-8">
-          {['experience', 'education' ,'projects', 'skills', 'contact'].map((section) => (
+          {['experience', 'education', 'projects', 'skills', 'contact'].map((section) => (
             <button
               key={section}
               onClick={() => scrollTo(section)}
@@ -38,13 +39,29 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Open to work badge */}
-        <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-accent/30 bg-accent/10">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
-          </span>
-          <span className="font-mono text-xs text-accent whitespace-nowrap">Open to work</span>
+        {/* Right side */}
+        <div className="flex  gap-3">
+
+          {/* Download Resume */}
+
+
+          <a
+            href="/Achyutha_Sushanth_Ariga_Resume_CS.pdf"
+            download="Achyutha_Sushanth_Ariga_Resume_CS.pdf"
+            className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/20 bg-white/5 hover:border-accent/50 hover:bg-accent/10 transition-all duration-200 font-mono text-xs text-gray-400 hover:text-accent whitespace-nowrap"
+          >
+            Download Resume
+          </a>
+
+          {/* Open to work badge */}
+          <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-accent/30 bg-accent/10">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+            </span>
+            <span className="font-mono text-xs text-accent whitespace-nowrap">Open to work</span>
+          </div>
+
         </div>
       </div>
     </nav>

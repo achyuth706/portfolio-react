@@ -79,6 +79,13 @@ export default function Hero() {
             >
               View projects
             </button>
+            <a
+              href="/Achyutha_Sushanth_Ariga_Resume_CS.pdf"
+              download="Achyutha_Sushanth_Ariga_Resume_CS.pdf"
+              className="px-6 py-3 rounded-lg bg-accent text-bg font-heading font-bold text-sm hover:bg-accent/90 transition-colors"
+            >
+              Download Resume
+            </a>
           </motion.div>
 
           <motion.div
