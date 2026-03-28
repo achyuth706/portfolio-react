@@ -115,20 +115,36 @@ export default function Hero() {
         </div>
 
         {/* Right — stat cards */}
-        <div className="grid grid-cols-2 gap-4">
-          {stats.map((s, i) => (
-            <motion.div
-              key={s.label}
-              initial={{ opacity: 0, y: 32 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 + i * 0.1, duration: 0.5 }}
-              className="bg-card border border-border rounded-2xl p-6 flex flex-col gap-1"
-            >
-              <span className="font-heading font-black text-4xl text-accent">{s.value}</span>
-              <span className="font-heading font-semibold text-white text-sm">{s.label}</span>
-              <span className="font-mono text-xs text-gray-500">{s.sub}</span>
-            </motion.div>
-          ))}
+        <div className="flex flex-col gap-4">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            className="flex gap-3"
+          >
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-accent/30 bg-accent/10">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+              </span>
+              <span className="font-mono text-xs text-accent whitespace-nowrap">Open to full-time roles</span>
+            </div>
+          </motion.div>
+          <div className="grid grid-cols-2 gap-4">
+            {stats.map((s, i) => (
+              <motion.div
+                key={s.label}
+                initial={{ opacity: 0, y: 32 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 + i * 0.1, duration: 0.5 }}
+                className="bg-card border border-border rounded-2xl p-6 flex flex-col gap-1"
+              >
+                <span className="font-heading font-black text-4xl text-accent">{s.value}</span>
+                <span className="font-heading font-semibold text-white text-sm">{s.label}</span>
+                <span className="font-mono text-xs text-gray-500">{s.sub}</span>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
