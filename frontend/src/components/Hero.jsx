@@ -96,7 +96,7 @@ export default function Hero() {
             className="flex gap-4"
           >
             <a
-              href="https://www.linkedin.com/in/achyutha-sushanth-ariga"
+              href="https://www.linkedin.com/in/achyuthariga/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-mono text-xs text-gray-500 hover:text-accent transition-colors"
@@ -104,7 +104,7 @@ export default function Hero() {
               LinkedIn ↗
             </a>
             <a
-              href="https://github.com/achyutha-sushanth"
+              href="https://github.com/achyuth706"
               target="_blank"
               rel="noopener noreferrer"
               className="font-mono text-xs text-gray-500 hover:text-accent transition-colors"
