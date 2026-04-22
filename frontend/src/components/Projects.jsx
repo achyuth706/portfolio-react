@@ -3,6 +3,19 @@ import { useRef } from 'react'
 
 const projects = [
   {
+    title: 'CineMind – AI Movie Agent',
+    type: 'AI Agent · Full Stack',
+    description:
+      'Production-grade agentic system using LangChain, FastAPI, and Llama 3.1 (Cerebras API) that routes natural language movie queries to an MCP-wrapped OMDb API. Engineered a manual tool-calling loop with JSON parsing fallback for reliability; architected a three-tier microservices stack (React + Vite, FastAPI, MCP Server) with Docker Compose, dynamically dispatching across 5 RESTful tools at <3 s end-to-end latency.',
+    stats: [
+      { label: 'Latency', value: '<3 s' },
+      { label: 'Tools', value: '5' },
+      { label: 'Services', value: '3-tier' },
+    ],
+    tags: ['LangChain', 'FastAPI', 'Llama 3.1', 'Cerebras', 'React', 'Docker', 'MCP'],
+    accent: '#a855f7',
+  },
+  {
     title: 'Narrative Intelligence for Urban Crime',
     type: 'ML + RAG',
     description:
